@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.header {
+    padding: 40px 60px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+.header_list {
+    display: flex;
+    align-items: center;
+
+    & .header_item {
+        margin-right: 50px;
+    }
+    & .header_item:last-child {
+        margin-right: 0px;
+    }
+}

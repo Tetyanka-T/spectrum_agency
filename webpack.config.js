@@ -7,7 +7,7 @@ module.exports = {
     filename: "[name][contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    assetModuleFilename: "[name][ext]",
+    assetModuleFilename: "images/[name][ext]",
   },
   performance: {
     hints: false,
@@ -30,6 +30,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.svg/,
+        type: "asset/inline",
       },
     ],
   },

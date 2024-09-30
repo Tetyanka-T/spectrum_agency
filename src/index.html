@@ -6,31 +6,68 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
         <header class="header">
-            <div class="header_logo">Spectrum</div>
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li class="header_item">
-                        <a href="#">About us</a></li>
-                    <li class="header_item">
-                        <a href="#">Advantages</a>
+            <div class="header__container">
+                <a href="index.html" class="header__logo">Spectrum</a>
+
+            
+            <button type="button" class="header__burger" aria-expanded="false" aria-controls="menu-container">
+                <div class="header__burger__icon">
+                    <p class="header__burger__icon-cross">close</p>
+                    <p class="header__burger__icon-menu">open</p>
+                </div>
+               
+                <!-- <svg class="header__burger__icon" width="20" height="20" aria-label="Переключатель мобильного меню">
+                    <use class="header__burger__icon-cross" href="/images/close-btn.svg"></use>
+                    <use class="header__burger__icon-menu" href="images/menu-btn.svg"></use>
+                </svg>  -->
+            </button>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">About us</a></li>
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">Advantages</a>
                     </li>
-                    <li class="header_item">
-                        <a href="#">Services</a>
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">Services</a>
                     </li>
-                    <li class="header_item">
-                        <a href="#">Projects</a>
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">Projects</a>
                     </li>
-                    <li class="header_item">
-                        <a href="#">Stages</a>
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">Stages</a>
                     </li>
-                    <li class="header_item">
-                        <a href="#">Contacts</a>
+                    <li class="header__item">
+                        <a href="#" class="header__menu__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            </div>
         </header>
+        <section class="section__hero">
+            <img src="/images/hero.png" class="hero__hand"/>
+            <p class="hero__title animation">spektrum</p>
+            <p class="hero__title__agency animation">agency</p>
+            <div class="hero__text__container container">
+                <p class="hero__text animation">We are a marketing agency and our mission is to help your business grow
+                    in a digital  environment
+                </p>
+                <button class="hero__button">Contact us</button>
+            </div>
+        
+            <ul class="hero__social__list container">
+                <li class="hero__social__item"><a href="#">Instagram</a></li>
+                <li class="hero__social__item"><a href="#">Facebook</a></li>
+                <li class="hero__social__item"><a href="#">Linkedin</a></li>
+            </ul>
+
+         
+           
+      
+        </section> 
+       
     </div>
 
 </body>

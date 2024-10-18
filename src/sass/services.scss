@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.section__services {
+    background-image: url(/images/cube.png);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.services__title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    & span {
+        background: $accent-text-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.services__button {
+    width: 192px;
+    background: $normal-bg-color-button;
+    border-radius: 30px;
+    color: $bground-color;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    &:hover {
+        background: $hover-bg-color-button;
+    }
+    &:focus {
+        background: $color-figure;
+    }
+}

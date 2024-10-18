@@ -4,6 +4,7 @@
 @import "./headrer.scss";
 @import "./hero.scss";
 @import "./advantage.scss";
+@import "./services.scss";
 
 
 html { 
@@ -62,6 +63,9 @@ img {
 }
 .wrapper {
   min-height: 100%;
+}
+.section {
+  padding-bottom: 170px;
 }
 .container {
     margin: 0 auto;

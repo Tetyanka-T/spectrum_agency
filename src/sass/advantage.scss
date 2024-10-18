@@ -16,6 +16,7 @@
 
 .advantages__text__specialize {
     font-size: 32px;
+    font-weight: 600;
     text-transform: uppercase;
 
     & span {
@@ -50,6 +51,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    & li {
+        margin-bottom: 20px;
+    }
+    & li:last-child {
+        margin-bottom: 0;
+    }
 }
 .advantages__item__arguments {
     position: relative;
@@ -87,7 +94,6 @@
     .advantages__list__mission {
         display: flex;
         justify-content: space-between;
-        // margin-left: 300px;
         margin-bottom: 50px;
         & li {
             margin-bottom: 0;
@@ -106,10 +112,14 @@
         justify-content: end;
         & li {
             width: 270px;
+            margin-bottom: 0;
         }
 
         & li:nth-child(odd) {
-            margin-right: 90px;
+            margin-right: 100px;
+        }
+        & li:nth-child(-n + 2) {
+            margin-bottom: 70px;
         }
     }
 }

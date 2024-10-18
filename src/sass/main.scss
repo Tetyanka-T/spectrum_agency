@@ -49,7 +49,7 @@ input {
   margin: 0;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 select{
@@ -65,7 +65,7 @@ img {
   min-height: 100%;
 }
 .section {
-  padding-bottom: 170px;
+  padding-bottom: 100px;
 }
 .container {
     margin: 0 auto;
@@ -77,6 +77,9 @@ img {
       max-width: 768px;
       padding-right: 30px;
       padding-left: 30px;
+    }
+    .section {
+      padding-bottom: 170px;
     }
   }
   @media screen and (min-width: 1200px) {

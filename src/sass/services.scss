@@ -2,23 +2,28 @@
 
 .section__services {
     background-image: url(/images/cube.png);
-    background-position: end;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
-
+    position: relative;
 }
 .services__title {
     font-size: 32px;
     font-weight: 600;
+    width: 280px;
+    margin: 0 auto;
     text-transform: uppercase;
+    margin-bottom: 50px;
+    & .services__title__margin {
+        margin-left: 35px;
+    }
 
-    & span {
+    & .services__title__color {
         background: $accent-text-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-
 .services__button {
     width: 192px;
     background: $normal-bg-color-button;
@@ -26,11 +31,91 @@
     color: $bground-color;
     padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
+    margin: 0 0 30px 80px;
     &:hover {
         background: $hover-bg-color-button;
     }
     &:focus {
         background: $color-figure;
+    }
+}
+.services__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  
+}
+.services__item {
+    padding: 20px;
+    border: 1px solid $text-color;
+    background-color: $bground-color;
+}
+.services__item__title-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.services__item__title {
+    font-size: $title-list-font-size;
+    font-weight: 600;
+}
+.services__item__text__bottom {
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+
+.services__title {
+    font-size: 76px;
+    width: 760px;
+    & .services__title__margin {
+        margin-left: 105px;
+    }
+}
+.services__button {
+    margin: 0 0 30px 500px;
+}
+.services__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.services__item__text__bottom {
+    margin-top: 150px;
+}
+}
+@media screen and (min-width: 1200px) {
+    .section__services {
+        background-position: center right;
+       background-size: 600px 600px;
+    }
+    .services__title { 
+        margin-left: 0;
+    }
+    .services__list {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & li:nth-child(3) {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        & li:nth-child(4) {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    }
+    .services__button {
+        position: absolute;
+        top: 320px;
+        right: 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .services__button {
+        right: -40px;
     }
 }

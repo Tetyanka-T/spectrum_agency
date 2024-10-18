@@ -3,6 +3,7 @@
 @import "./variables.scss";
 @import "./headrer.scss";
 @import "./hero.scss";
+@import "./advantage.scss";
 
 
 html { 
@@ -15,6 +16,7 @@ body {
   background-color: $bground-color;
   font-weight: 400;
   font-size: 16px;
+  font-family: $main-font;
 }
 
 body._lock {

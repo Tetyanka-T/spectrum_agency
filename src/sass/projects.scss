@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+.section__projects {
+    margin: 0 auto;
+}
+.projects__title__margin {
+    display: block;
+    margin-left: 90px;
+}
+.projects__list {
+    margin-top: 20px;
+}
+.projects__item {
+    margin-bottom: 30px;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+    & .projects__item__img-color {
+        display: none;
+    }
+    &:hover {
+        .projects__item__img-color {
+            display: block;
+        }
+        .projects__item__img {
+            display: none;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.projects__item:first-child .projects__item__tumb {
+    width: 100%;
+    height: 400px;
+}
+.projects__item:nth-child(2) .projects__item__tumb {
+    width: 100%;
+    height: 292px;
+}
+.projects__item:nth-child(4) {
+    width: 100%;
+    height: 248px;
+}
+.projects__item:nth-child(5) {
+    width: 100%;
+    height: 350px;
+}
+.projects__item__text__cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 18px;
+}

@@ -1,0 +1,58 @@
+@import "./variables.scss";
+
+.choose__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.choose__list {
+    margin: 0 auto;
+}
+.choose__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid $text-color;
+    padding: 15px 0;
+}
+.choose__item__img {
+    width: 40px;
+    height: 40px;
+}
+.choose__item__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+   
+}
+.choose__item__text {
+    font-size: 18px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .choose__item {
+        grid-template-columns: 1fr 1fr 2rf;
+    }
+    .choose__item__title  {
+        text-align: left;
+    }
+    .choose__item__text {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .choose__item__title  {
+        font-size: $title-list-font-size;
+    }
+    .choose__item__text {
+        width: 428px;
+    }
+}

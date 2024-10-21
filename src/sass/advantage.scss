@@ -14,17 +14,6 @@
     margin-top: 5px;
 }
 
-.advantages__text__specialize {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    & span {
-        background: $accent-text-color;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
 .advantages__text__goals {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -82,7 +71,6 @@
 
 @media screen and (min-width: 768px) {
     .advantages__text__specialize {
-        font-size: 76px;
         width: 580px;
     }
     .advantages__text__year {
@@ -127,9 +115,8 @@
 @media screen and (min-width: 1200px) {
     .advantages__text {
        margin-bottom: 20px;
-       }
+    }
     .advantages__text__specialize {
-        font-size: $title-section-font-size;
         width: 893px;
     }
     .advantages__text__goals {

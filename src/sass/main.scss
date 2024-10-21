@@ -5,6 +5,7 @@
 @import "./hero.scss";
 @import "./advantage.scss";
 @import "./services.scss";
+@import "./choose.scss";
 
 
 html { 
@@ -52,7 +53,7 @@ input {
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
-select{
+select {
   padding: 0;
   margin: 0;
 }
@@ -66,6 +67,16 @@ img {
 }
 .section {
   padding-bottom: 100px;
+}
+.section__title {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.title__accent {
+  background: $accent-text-color;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .container {
     margin: 0 auto;
@@ -81,11 +92,17 @@ img {
     .section {
       padding-bottom: 170px;
     }
+    .section__title {
+      font-size: 76px;
+    }
   }
   @media screen and (min-width: 1200px) {
     .container {
       max-width: 1200px;
       padding-right: 75px;
       padding-left: 75px;
+    }
+    .section__title {
+      font-size: $title-section-font-size;
     }
   }

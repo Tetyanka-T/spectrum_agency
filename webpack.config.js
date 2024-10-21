@@ -32,8 +32,11 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.svg/,
-        type: "asset/inline",
+        test: /\.svg$/,
+        type: "asset/resource",
+        generator: {
+          filename: path.join("icons", "[name].[contenthash][ext]"),
+        },
       },
     ],
   },

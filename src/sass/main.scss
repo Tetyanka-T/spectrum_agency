@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   font-size: $main-font-size;
   font-family: $main-font;
+  line-height: 1.1;
 }
 
 body._lock {
@@ -53,6 +54,7 @@ input {
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  padding: 0;
 }
 select {
   padding: 0;

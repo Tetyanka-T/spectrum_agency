@@ -1,0 +1,96 @@
+@import "./variables.scss";
+.section__stages {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.stages__text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.stages__item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    cursor: pointer;
+    & img {
+        display: none;
+    }   
+    &:hover, &:focus {
+        & img {
+            display: block;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        & .stages__item__text {
+            display: block;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        & .stages__item__title  {
+            background: $accent-text-color;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    } 
+}
+.stages__item__title {
+    position: relative;
+    
+}
+.stages__item__title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $bground-color;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+.stages__item__text {
+    font-weight: 400;
+    display: none;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .stages__item {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: start;
+        cursor: pointer;
+        & img {
+            display: none;
+        }   
+        &:hover, &:focus {
+            & img {
+                display: block;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 2;
+                object-fit: contain;
+                overflow: hidden;
+            }
+            & .stages__item__text {
+                display: block;
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 1;
+                width: 200px;
+            }
+        } 
+    }
+}

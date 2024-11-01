@@ -7,6 +7,7 @@
 @import "./services.scss";
 @import "./choose.scss";
 @import "./projects.scss";
+@import "./stages.scss";
 
 
 html { 
@@ -121,5 +122,12 @@ img {
     }
     .section__title {
       font-size: $title-section-font-size;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+      padding-right: 60px;
+      padding-left: 60px;
     }
   }

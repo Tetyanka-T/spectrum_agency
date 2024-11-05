@@ -145,9 +145,16 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 3;
+        align-self: end;
+        margin: 0 0 50px 30px;
+
+    
+
+
         & p {
             border-bottom: 1px solid $text-color;
             width: 100px;
+            
         }
     }
 }
@@ -166,12 +173,12 @@
     }
    
     .projects__list {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
   
     .projects__item:first-child  {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 2;
     }
@@ -185,15 +192,18 @@
         position: relative;
         & div {
             position: absolute;
-            top: -120px;
+            top: -110px;
             left: 500px;
+            width: 161px;
+        
             & .projects__item__brand {
                 margin-bottom: 0;
+                text-align: end;
             }
             & button {
                 position: absolute;
                 top: -20px;
-                left: 300px;
+                left: 350px;
             }
         }
         
@@ -203,11 +213,12 @@
         grid-column-end: 1;
         grid-row-start: 3;
         grid-row-end: 3;
-        
+        width: 304px;
+        align-self: end;
     }
     .projects__item:nth-child(5) {
         grid-column-start: 2;
-        grid-column-end: 3/2;
+        grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
     }
@@ -216,7 +227,8 @@
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 3;
-      
+        align-self: end;
+        margin-left: auto;
     }
 
 }
@@ -224,17 +236,10 @@
 
 @media screen and (min-width: 1440px) {
     .projects__item:nth-child(3) {
-        position: relative;
         & div {
-            position: absolute;
-            top: -120px;
-            left: 550px;
-            & .projects__item__brand {
-                margin-bottom: 0;
-            }
+            left: 670px;
+         
             & button {
-                position: absolute;
-                top: -20px;
                 left: 450px;
             }
         }
@@ -252,5 +257,10 @@
         }
     
     }
+   
 
+    // .projects__item:nth-child(4) {
+      
+    //     align-self: end;
+    // }
 }

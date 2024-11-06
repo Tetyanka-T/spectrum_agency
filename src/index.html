@@ -10,37 +10,30 @@
         <header class="header">
             <div class="header__container">
                 <a href="/" class="header__logo">Spectrum</a>
-    
-            
-            <button type="button" class="header__burger" aria-expanded="false" aria-controls="menu-container">
+            <button type="button" class="header__burger" aria-expanded="false" aria-controls="menu-container" aria-label="menu button">
                <div class="header__burger__icon">
-                    <p class="header__burger__icon-cross">close</p>
-                    <p class="header__burger__icon-menu">open</p>
+                    <img class="header__burger__icon-cross" src="/images/closebtn.png" width="40px" height="40px"/>
+                    <img class="header__burger__icon-menu" src="/images/menu.png" width="20px" height="20px"/>
                 </div>
-    <!--              
-                <svg class="header__burger__icon" width="20" height="20" aria-label="Переключатель мобильного меню">
-                    <use class="header__burger__icon-cross" href="/images/close-btn.svg"></use>
-                    <use class="header__burger__icon-menu" href="/images/menu-btn.svg"></use>
-                </svg>  -->
             </button>
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">About us</a></li>
+                        <a href="" class="header__menu__link">About us</a></li>
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">Advantages</a>
+                        <a data-goto=".section__advantages" href="" class="header__menu__link">Advantages</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">Services</a>
+                        <a data-goto=".section__services" href="" class="header__menu__link">Services</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">Projects</a>
+                        <a href="" class="header__menu__link">Projects</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">Stages</a>
+                        <a href="" class="header__menu__link">Stages</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__menu__link">Contacts</a>
+                        <a href="" class="header__menu__link">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -63,7 +56,7 @@
                 <li class="hero__social__item"><a href="#">Linkedin</a></li>
             </ul>
         </section>
-        <section class="section__advantages container section">
+        <section class="section__advantages container section" id="advantages">
             <div class="advantages__text">
                 <p class="advantages__text__year">2019</p>
                 <h2 class="advantages__text__specialize section__title">We specialize in developing and implementing <span class="title__accent">strategies</span></h2>
@@ -94,7 +87,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section__services container section">
+        <section class="section__services container section" id="services">
             <h2 class="services__title section__title">Improve your <span class="services__title__margin">business with </span><span class="title__accent">our services</span></h2>
             <button class="services__button button__small">Contact us</button>
             <ul class="services__list">
@@ -162,7 +155,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section__projects section container">
+        <section class="section__projects section container" id="projects">
             <h2 class="projects__title section__title">look at our <span class="projects__title__margin">featured </span><span class="title__accent">projects</span></h2>
             <ul class="projects__list">
                 <li class="projects__item">
@@ -221,7 +214,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section__stages section container">
+        <section class="section__stages section container" id="stages">
             <div class="stages__text-container">
                 <p>Stages</p>
                 <p>work</p>
@@ -281,19 +274,19 @@
                 <button class="button__small" type="submit">Contact us</button>
              </form>
         </section>
-        <section class="contact__section container">
+        <section class="contact__section container" id="contacts">
             <ul class="contact__list">
                 <li class="contact__item">
                    <h3 class="contact__item__title title__accent">NAVIGATION</h3>
                    <ul class="contact__item__sublist">
                         <li class="contact__sublist__item">
-                            <a href="">Main</a>
+                            <a href="/">Main</a>
                         </li>
                         <li class="contact__sublist__item">
-                            <a href="">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li class="contact__sublist__item">
-                            <a href="">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                    </ul>
                 </li>

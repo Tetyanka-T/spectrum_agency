@@ -11,9 +11,9 @@
     width: 280px;
     margin: 0 auto;
     margin-bottom: 50px;
-    & .services__title__margin {
-        margin-left: 35px;
-    }
+}
+.services__title__margin {
+    margin-left: 35px;
 }
 .services__button {
     margin: 0 0 30px 80px;      
@@ -46,9 +46,9 @@
 
 .services__title {
     width: 760px;
-    & .services__title__margin {
-        margin-left: 105px;
-    }
+}
+.services__title__margin {
+    margin-left: 105px;
 }
 .services__button {
     margin: 0 0 30px 500px;
@@ -67,8 +67,12 @@
        background-position: center right;
        background-size: 600px 600px;
     }
-    .services__title { 
+    .services__title {
         margin-left: 0;
+        width: 100%;
+    }
+    .services__title__margin {
+        margin-left: 295px;
     }
     .services__list {
         grid-template-columns: 1fr 1fr 1fr;
@@ -88,12 +92,18 @@
     }
     .services__button {
         position: absolute;
-        top: 320px;
-        right: 0;
+        top: 350px;
+        right: 90px;
+        margin: 0;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
+    .services__title {
+        & .title__accent {
+            display: block;
+        }
+    }
     .services__button {
-        right: -40px;
+        right: 80px;
     }
 }

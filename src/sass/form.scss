@@ -7,7 +7,8 @@
     font-size: 18px;
     font-size: 18px;
     line-height: 1.1;
-    text-align: center;
+    text-align: start;
+    width: 230px;
 }
 .form {
     display: flex;
@@ -60,6 +61,9 @@
     }
     .form {
         width: 580px;
+        button {
+            align-self: start;
+        }
     }
     .form__text {
       position: absolute;
@@ -73,8 +77,8 @@
         text-indent: 24%;
     }
     .form__text {
-      top: 235px;
-      right: 10px;
+      top: 230px;
+      right: 0px;
      
     }
     .form {
@@ -87,7 +91,7 @@
     }
     .form__text {
       top: 230px;
-      right: 500px;
+      right: 450px;
      
     }
     .form {

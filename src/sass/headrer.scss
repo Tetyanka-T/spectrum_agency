@@ -68,6 +68,9 @@ body._touch {
     }
   }
 @media screen and (min-width: 767px) {
+    .header__container {
+        justify-content: space-between;
+    }
     .header__list {
         display: flex;
         align-items: center;
@@ -84,11 +87,9 @@ body._touch {
     .header__burger {
         z-index: 20;
         display: block;
-        // position: relative;
         width: 40px;
         height: 40px;
         cursor: pointer;
-        // background-color: transparent;
 
         &._active {
            & .header__burger__icon-cross {

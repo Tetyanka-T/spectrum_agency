@@ -16,43 +16,21 @@
     align-items: center;
     margin: 0 auto;
     width: 260px;
-  }
-.form__input-data {
-    width: 100%;
-    margin: 40px 0;
-    position: relative;
-    background-color: $bground-color;
 }
+
 .form__input {
     display: block;
     width: 100%;
     height: 100%;
+    margin: 40px 0;
     border: none;
+    color: $text-color;
     font-size: 17px;
     background-color: $bground-color;
     border-bottom: 1px ridge $text-color;
     &:focus {
         outline: none;
     }
-}
-.form__input-data .form__input:focus ~ label {
-    transform: translateY(-20px);
-    font-size: 14px;
-    background: $accent-text-color;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.form__input-data .form__label {
-    position: absolute;
-    pointer-events: none;
-    bottom: 10px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-.form__label {
-    width: 100%;
-    bottom: 40px;
-    color: $text-color;
 }
 
 @media screen and (min-width: 768px) {

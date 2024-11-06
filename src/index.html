@@ -263,15 +263,11 @@
             <section class="section__form container section">
             <h2 class="form__title section__title">Let's take your business to the <span class="title__accent">next level </span>together</h2>
             <p class="form__text">Create something incredible with us</p>
-            <form class="form">
-                <div class="form__input-data">
-                    <input type="text" required class="form__input" id="name">
-                    <label for="name" class="form__label">Name</label>
-                </div>
-                <div class="form__input-data">
-                    <input type="number" required class="form__input" id="tel">
-                    <label for="tel" class="form__label">Telephone</label>
-                </div>
+            <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="b3e2d70a-294c-4ae3-a6ff-84e38bd6d5fd">
+                <input type="text" required class="form__input" name="name" placeholder="Name">
+                <input type="number" required class="form__input" name="tel" placeholder="Telephone">
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
                 <button class="button__small" type="submit">Contact us</button>
              </form>
             </section>

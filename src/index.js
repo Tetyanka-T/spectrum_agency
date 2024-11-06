@@ -27,7 +27,7 @@ if (menuBtn) {
     menuBody.classList.toggle("_active");
   });
 }
-const menuLinks = document.querySelectorAll(".header__menu___link[data-goto]");
+const menuLinks = document.querySelectorAll(".header__menu__link[data-goto]");
 if (menuLinks.length > 0) {
   menuLinks.forEach((menuLink) => {
     menuLink.addEventListener("click", onMenuLinkClick);
@@ -39,8 +39,8 @@ function onMenuLinkClick(e) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
     const gotoBlockValue =
       gotoBlock.getBoundingClientRect().top +
-      pageY -
-      document.querySelector("header").offsetHeight;
+      scrollY -
+      -document.querySelector(".header").offsetHeight;
 
     if (menuBtn.classList.contains("_active")) {
       document.body.classList.remove("_lock");

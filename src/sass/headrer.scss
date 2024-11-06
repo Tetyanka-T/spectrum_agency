@@ -15,7 +15,6 @@
     align-items: center;
     padding: 0 30px;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header__logo {
@@ -54,6 +53,7 @@
 }
 .header__burger {
     display: none;
+    margin-left: auto;
 }
 .header__burger__icon-cross {
     display: none;

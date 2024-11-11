@@ -2,6 +2,7 @@
 .section__advantages {
     font-size: 18px;
     margin: 0 auto;
+    padding: 100px 0 0 0;
 }
 .advantages__text {
  display: grid;
@@ -113,6 +114,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .section__advantages {
+        padding-top: 150px;
+    }
     .advantages__text {
        margin-bottom: 20px;
     }

@@ -41,6 +41,7 @@
         width: 580px;
         button {
             align-self: start;
+            margin-top: 20px;
         }
     }
     .form__text {
@@ -63,7 +64,7 @@
         margin-top: 70px;
     }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
     .form__title {
         text-indent: 33%;
     }
@@ -73,6 +74,8 @@
      
     }
     .form {
-        margin-top: 70px;
+        margin-top: 80px;
+        margin-left: 300px;
+
     }
 }

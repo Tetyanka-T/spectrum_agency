@@ -25,6 +25,7 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
+        column-gap: 300px;
     }
     .contact__item:last-child {
         margin-top: 15px;
@@ -35,8 +36,19 @@
     .contact__list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 60px;
+    }
+    .contact__item:nth-child(3) {
+        margin-left: 250px;
     }
     .contact__item:last-child {
         margin-top: 20px;
     }
+}
+@media screen and (min-width: 1440px) {
+    .contact__list {
+        column-gap: 170px;
+    }
+
+   
 }

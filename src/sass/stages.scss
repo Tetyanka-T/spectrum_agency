@@ -19,6 +19,10 @@
     & img {
         display: none;
     }   
+    & .stages__item__number {
+        filter: brightness(60%);
+        padding-top: 13px;
+    }
     &:hover, &:focus {
         & img {
             display: block;
@@ -37,10 +41,17 @@
             grid-row-start: 2;
             grid-row-end: 2;
         }
+        & .stages__item__number {
+            filter: none;
+            color: $color-figure;
+        }
         & .stages__item__title  {
             background: $accent-text-color;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        & .stages__item__title::after {
+            height: 0;
         }
     } 
 }
@@ -91,5 +102,15 @@
                 width: 200px;
             }
         } 
+    }
+    .stages__item__title::after {
+        height: 17px;  
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  
+    .stages__item__title::after {
+        height: 22px;
     }
 }

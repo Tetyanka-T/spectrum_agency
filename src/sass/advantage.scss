@@ -7,27 +7,20 @@
 }
 .advantages__text__year {
     font-size: 18px;
-    // margin-top: 5px;
 }
 
 .advantages__text__goals {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    width: 192px;
 }
 .advantages__list__mission {
-    margin: 0 auto;
+    margin-bottom: 32px;
     & li {
         margin-bottom: 20px;
     }
     & li:last-child {
         margin-bottom: 0;
-    }
-    & li:first-child {
-        width: 260px;
+        width: 121px;
     }
 }
 .advantages__list__arguments {
@@ -66,41 +59,48 @@
 }
 
 @media screen and (min-width: 768px) {
-    // .advantages__text__specialize {
-    //     width: 580px;
-    // }
-    // .advantages__text__year {
-    //     margin-top: 15px;
-    // }
-    // .advantages__text__goals {
-    //   margin-left: auto;
-    // }
+    .section__advantages {
+        padding: 60px 0 0 0;
+    }
+    .advantages__text__year {
+        position: absolute;
+        top: 70px;
+    }
+    .advantages__text__specialize {
+        margin-left: 80px;
+        margin-bottom: 282px;
+    }
+    .advantages__text {
+        position: absolute;
+        top: 130px;
+        left: 30px;
+    }
+    .advantages__text__goals {
+        position: absolute;
+        top: 315px;
+        right: 20px;
+    }
     .advantages__list__mission {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
+        margin-left: 95px;
         & li {
             margin-bottom: 0;
         }
         & li:first-child {
             width: 330px;
         }
-        & li:last-child {
-            width: 123px;
-        }
     }
     .advantages__list__arguments {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: end;
+        justify-content: space-between;
+        margin-left: 90px;
         & li {
             width: 270px;
             margin-bottom: 0;
-        }
-
-        & li:nth-child(odd) {
-            margin-right: 100px;
         }
         & li:nth-child(-n + 2) {
             margin-bottom: 70px;
@@ -108,86 +108,64 @@
     }
 }
 
-// @media screen and (min-width: 1200px) {
-//     .section__advantages {
-//         padding-top: 150px;
-//     }
-//     .advantages__text {
-//        margin-bottom: 20px;
-//     }
-//     .advantages__text__specialize {
-//         width: 893px;
-//     }
-//     .advantages__text__goals {
-//        position: absolute;
-//        bottom: 0;
-//        right: 0;
-//        width: 180px;
-//     }
-//     .advantages__list__mission {
-//         display: flex;
-//         justify-content: space-between;
-//         margin-left: 280px;
-//         margin-bottom: 50px;
-//         & li {
-//             margin-bottom: 0;
-//         }
-//         & li:first-child {
-//             width: 330px;
-//         }
-//         & li:last-child {
-//             width: 123px;
-//         }
-//     }
-//     .advantages__list__arguments {
-//        margin-left: 270px;
-//        justify-content: start;
-//        & li:nth-child(odd) {
-//         margin-right: 240px;
-//     }
-//     }
-// }
-
-@media screen and (min-width: 1440px) {
-    .advantages__text {
-      
-       position: absolute;
-       top: 200px;
-       left: 340px;
+@media screen and (min-width: 1200px) {
+    .section__advantages {
+        padding: 170px 0 0 0;
     }
     .advantages__text__year {
-        position: absolute;
-        top: 120px;
-        left: 350px;
+        top: 190px;
+        left: 260px;
+    }  
+    .advantages__text__specialize {
+        margin-left: 290px;
+        margin-bottom: 382px;
+    }
+    .advantages__text {
+        top: 260px;
+        left: 250px;
+    }
+    .advantages__text__goals {
+        top: 490px;
+        right: 20px;
+    }
+    .advantages__list__mission {
+        margin-left: 260px;
+    }
+    .advantages__list__arguments {
+        margin-left: 275px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .advantages__text__year {
+        left: 368px;
     }
     .advantages__text__specialize {
-        margin-left: 422px;
+        margin-left: 460px;
         margin-bottom: 352px;
     }
-  
-    .advantages__text__goals {
-       position: absolute;
-       top: 425px;
-       right: 175px;
-       width: 192px;
+    .advantages__text {
+        left: 368px;
     }
+   
     .advantages__list__mission {
         display: flex;
         justify-content: space-between;
-        margin-left: 422px;
+        margin-left: 440px;
         margin-bottom: 50px;
-        & li {
-            margin-bottom: 0;
-        }
-        & li:first-child {
-            width: 330px;
-        }
-        & li:last-child {
-            width: 123px;
-        }
     }
     .advantages__list__arguments {
-       margin-left: 422px;
-       justify-content: space-between;
+       margin-left: 440px;
+       & li {
+        width: 270px;
+        margin-bottom: 0;
+    }
+    & li:nth-child(-n + 2) {
+        margin-bottom: 0px;
+    }
+    & li:nth-child(odd) {
+        margin-right: 250px;
+    }
     }
 }

@@ -98,6 +98,10 @@
     }
 }
 @media screen and (min-width: 1440px) {
+    .section__services {
+        background-position: top 410px right 220px;
+  
+    }
     .services__title {
         & .title__accent {
             display: block;
